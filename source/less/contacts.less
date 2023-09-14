@@ -20,6 +20,9 @@
   @media (min-width: @t-width) {
     order: 2;
     margin-left: 30px;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.14px;
   }
 }
 
@@ -38,7 +41,7 @@
 
   @media (min-width: @t-width) {
     order: 1;
-    margin-top: 0;
+    margin-top: 5px;
     margin-left: auto;
   }
 }
@@ -47,6 +50,17 @@
   display: block;
   text-decoration: none;
   margin-left: 22px;
+
+  @media (min-width: @t-width) {
+    margin-left: 14px;
+  }
+}
+
+.contacts__social-link svg {
+  @media (min-width: @t-width) {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .contacts__social-link--vk {
@@ -73,6 +87,6 @@
   @media (min-width: @t-width) {
     order: 3;
     margin-top: 0;
-    margin-left: 30px;
+    margin-left: 16px;
   }
 }
