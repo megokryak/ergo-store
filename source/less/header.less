@@ -1,0 +1,148 @@
+.header {
+  @media (min-width: @t-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: relative;
+  }
+}
+
+.header__wrapper-top-menu {
+  padding-top: 16px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid @colorDopGray;
+  box-sizing: border-box;
+
+  @media (min-width: @t-width) {
+    order: 2;
+  }
+}
+
+.header__container-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__toggle {
+  width: 20px;
+  height: 20px;
+  margin-top: -8px;
+  background-color: transparent;
+  border: none;
+  background-image: url("../img/burger-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: @t-width) {
+    position: absolute;
+    left: 120px;
+    top: 50px;
+    z-index: 1;
+  }
+
+  @media (min-width: @d-width) {
+    display: none;
+  }
+}
+
+.header--closed .header__toggle {
+  background-image: url("../img/close-icon.svg");
+}
+
+.header__search {
+  display: none;
+
+  @media (min-width: @t-width) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.header__link-like {
+  display: none;
+
+  @media (min-width: @t-width) {
+    display: block;
+    margin-right: 30px;
+  }
+}
+
+.header__link-cart {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: -15px;
+}
+
+.header__link-cart::before {
+  content: attr(data-col);
+  font-size: 7px;
+  font-weight: 700;
+  color: @colorBlack;
+  margin-bottom: -16px;
+  margin-left: 2px;
+}
+
+.header__wrapper-menu {
+  border-bottom: 1px solid @colorDopGray;
+  box-sizing: border-box;
+
+  @media (min-width: @t-width) {
+    order: 3;
+  }
+}
+
+.header__container-menu {
+  padding-top: 14px;
+  padding-bottom: 13px;
+}
+
+.header__main-nav {
+  display: none;
+
+  @media (min-width: @d-width) {
+    display: block;
+    position: absolute;
+    left: 290px;
+    top: 10px;
+  }
+}
+
+.header--closed .header__main-nav {
+  display: block;
+
+  @media (min-width: @t-width) {
+    position: absolute;
+    top: 90px;
+    left: 110px;
+  }
+}
+
+.header__contacts {
+  display: none;
+  padding-top: 36px;
+  padding-bottom: 24px;
+
+  @media (min-width: @t-width) {
+    display: block;
+    padding-top: 5px;
+    order: 1;
+    border-bottom: 1px solid @colorDopGray;
+  }
+}
+
+.header--closed .header__contacts {
+  display: block;
+}
+
+.header__container-nav {
+  @media (min-width: @t-width) {
+    padding: 0;
+    min-width: auto;
+    display: flex;
+  }
+}
