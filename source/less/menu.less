@@ -9,6 +9,10 @@
   @media (min-width: @t-width) {
     justify-content: space-between;
   }
+
+  @media (min-width: @d-width) {
+    justify-content: flex-start;
+  }
 }
 
 .menu__item {
@@ -21,6 +25,16 @@
     padding: 1px 9px;
     border: 1px solid @colorDopGray;
     border-radius: 20px;
+  }
+
+  @media (min-width: @d-width) {
+    padding: 1px 11px;
+  }
+}
+
+.menu__item:not(:first-child) {
+  @media (min-width: @d-width) {
+    margin-left: 20px;
   }
 }
 
