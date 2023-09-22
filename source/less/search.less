@@ -22,6 +22,10 @@
   @media (min-width: @d-width) {
     width: 409px;
   }
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .search__input::placeholder {
@@ -74,6 +78,17 @@
   padding-left: 21px;
   padding-right: 21px;
   position: relative;
+  cursor: pointer;
+}
+
+.search__submit svg path,
+.search__submit svg path {
+  stroke: @colorBlack;
+}
+
+.search__submit:hover svg path,
+.search__submit:focus svg path {
+  stroke: @colorOrange;
 }
 
 .search__wrapper-select::before,

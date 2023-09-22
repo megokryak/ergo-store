@@ -30,6 +30,16 @@
   @media (min-width: @d-width) {
     padding: 1px 11px;
   }
+
+  &:hover,
+  &:focus {
+    border: 1px solid @colorOrange;
+  }
+}
+
+.menu__item:hover .menu__link,
+.menu__item:focus .menu__link {
+  color: @colorOrange;
 }
 
 .menu__item:not(:first-child) {
@@ -95,10 +105,11 @@
 }
 
 .menu__link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   color: @colorBlack;
-  padding-left: 24px;
   position: relative;
 
   @media (min-width: @t-width) {
@@ -106,61 +117,22 @@
   }
 }
 
-.menu__link--stock,
-.menu__link--sale {
-  color: @colorOrange;
-
-  @media (min-width: @t-width) {
-    color: @colorBlack;
-  }
+.menu__link span,
+.menu__link svg path,
+.menu__link svg circle,
+.menu__link svg rect {
+  stroke: @colorBlack;
 }
 
-.menu__link--stock::before,
-.menu__link--sale::before,
-.menu__link--new::before,
-.menu__link--in-stock::before,
-.menu__link--chairs::before,
-.menu__link--tables::before,
-.menu__link--sofas::before,
-.menu__link--accessories::before {
-  content: "";
-  width: 14px;
-  height: 14px;
-  position: absolute;
-  left: 0;
-  top: calc(50% - 7px);
-  background-position: center;
-  background-repeat: no-repeat;
+.menu__item:hover .menu__link svg path,
+.menu__item:focus .menu__link svg path,
+.menu__item:hover .menu__link svg circle,
+.menu__item:focus .menu__link svg circle,
+.menu__item:hover .menu__link svg rect,
+.menu__item:focus .menu__link svg rect {
+  stroke: @colorOrange;
 }
 
-.menu__link--stock::before {
-  background-image: url("../img/promo-icon.svg");
-}
-
-.menu__link--sale::before {
-  background-image: url("../img/sale-icon.svg");
-}
-
-.menu__link--new::before {
-  background-image: url("../img/new-icon.svg");
-}
-
-.menu__link--in-stock::before {
-  background-image: url("../img/in-stock-icon.svg");
-}
-
-.menu__link--chairs::before {
-  background-image: url("../img/chair-icon.svg");
-}
-
-.menu__link--tables::before {
-  background-image: url("../img/table-icon.svg");
-}
-
-.menu__link--sofas::before {
-  background-image: url("../img/divan-icon.svg");
-}
-
-.menu__link--accessories::before {
-  background-image: url("../img/accessories-icon.svg");
+.menu__link span {
+  margin-left: 6px;
 }

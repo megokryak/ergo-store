@@ -89,6 +89,25 @@
   }
 }
 
+.header__link-like svg path,
+.header__link-like svg ellipse,
+.header__link-cart svg path,
+.header__link-cart svg ellipse {
+  stroke: @colorBlack;
+}
+
+.header__link-like:hover svg path,
+.header__link-like:focus svg path,
+.header__link-like:hover svg ellipse,
+.header__link-like:focus svg ellipse,
+.header__link-cart:hover svg path,
+.header__link-cart:focus svg path,
+.header__link-cart:hover svg ellipse,
+.header__link-cart:focus svg ellipse {
+  stroke: @colorOrange;
+}
+
+
 .header__link-like span {
   display: none;
 
@@ -99,6 +118,15 @@
     color: @colorBlack;
     margin-left: 12px;
   }
+}
+
+.header__link-like:hover span,
+.header__link-cart:hover span,
+.header__link-like:focus span,
+.header__link-cart:focus span,
+.header__link-cart:hover::before,
+.header__link-cart:focus:before {
+  color: @colorOrange;
 }
 
 .header__link-cart {
