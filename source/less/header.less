@@ -1,9 +1,8 @@
 .header {
   @media (min-width: @t-width) {
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 .header__link svg {
@@ -21,6 +20,7 @@
 
   @media (min-width: @t-width) {
     order: 2;
+    width: 100%;
     padding-top: 30px;
   }
 
@@ -177,6 +177,7 @@
 
   @media (min-width: @t-width) {
     order: 3;
+    width: 100%;
   }
 
   @media (min-width: @d-width) {
@@ -199,9 +200,8 @@
 
   @media (min-width: @d-width) {
     display: block;
-    position: absolute;
-    left: 290px;
-    top: 10px;
+    width: 60%;
+    box-sizing: border-box;
   }
 }
 
@@ -219,6 +219,7 @@
   display: none;
   padding-top: 36px;
   padding-bottom: 24px;
+  box-sizing: border-box;
 
   @media (min-width: @t-width) {
     display: block;
@@ -230,7 +231,8 @@
 
   @media (min-width: @d-width) {
     border-bottom: none;
-    padding: 5px 290px 2px 290px;
+    padding: 5px 290px 0 0;
+    width: 40%;
   }
 }
 
@@ -243,5 +245,10 @@
     padding: 0;
     min-width: auto;
     display: flex;
+  }
+
+  @media (min-width: @d-width) {
+    padding: 5px 0 0 290px;
+    box-sizing: border-box;
   }
 }
