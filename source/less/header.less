@@ -46,10 +46,11 @@
   background-repeat: no-repeat;
 
   @media (min-width: @t-width) {
-    position: absolute;
-    left: 120px;
-    top: 26px;
-    z-index: 1;
+    display: none;
+    //position: absolute;
+    //left: 120px;
+    //top: 26px;
+    //z-index: 1;
   }
 
   @media (min-width: @d-width) {
@@ -198,10 +199,15 @@
 .header__main-nav {
   display: none;
 
-  @media (min-width: @d-width) {
+  @media (min-width: @t-width) {
     display: block;
     width: 60%;
     box-sizing: border-box;
+    padding: 5px 0 0 120px;
+  }
+
+  @media (min-width: @d-width) {
+    padding: 5px 0 0 290px;
   }
 }
 
@@ -238,17 +244,4 @@
 
 .header--closed .header__contacts {
   display: block;
-}
-
-.header__container-nav {
-  @media (min-width: @t-width) {
-    padding: 0;
-    min-width: auto;
-    display: flex;
-  }
-
-  @media (min-width: @d-width) {
-    padding: 5px 0 0 290px;
-    box-sizing: border-box;
-  }
 }
