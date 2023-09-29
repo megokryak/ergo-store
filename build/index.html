@@ -7,12 +7,16 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
+    <!-- Header -->
     <header class="page__header header">
+      <!-- Верхнее меню -->
       <div class="header__wrapper-top-menu">
         <div class="header__container-top container">
+          <!-- Кнопка открытия моб меню -->
           <button class="header__toggle" type="button">
             <span class="visually-hidden">Открыть меню/закрыть меню</span>
           </button>
+          <!-- Логотип -->
           <a href="index.html" class="header__link">
             <svg width="158" height="28" viewBox="0 0 158 28" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M11.519 9.47864H3.47363V7.0884H11.519C13.8864 7.0884 15.6517 8.12066 16.8662 9.56145C18.0516 10.9678 18.7017 12.7419 18.9884 14.3153L16.6167 14.7403C16.3797 13.4398 15.8577 12.0918 15.0171 11.0945C14.2054 10.1316 13.0908 9.47864 11.519 9.47864Z" fill="#FF8B20"/>
@@ -62,6 +66,7 @@
               <path d="M157.5 27.9393H157.072V25.1056L154.924 27.9393H154.527V24.3972H154.955V27.2258L157.102 24.3972H157.5V27.9393Z" fill="#666666"/>
             </svg>
           </a>
+          <!-- Поиск -->
           <form class="header__search search" action="#" method="post">
             <label class="search__label-input">
               <input class="search__input" type="text" name="search" placeholder="Поиск по каталогу">
@@ -81,12 +86,14 @@
               <span class="visually-hidden">Отправить</span>
             </button>
           </form>
+          <!-- Избранное -->
           <a href="like.html" class="header__link-like">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M3.7859 5.09301C2.12712 6.69102 2.0473 9.27883 3.69727 11.0269L10 17L16.3028 11.0269C17.9526 9.27883 17.873 6.69102 16.2142 5.09301C14.6584 3.59444 11.5533 3.4343 10 5.90082C8.44679 3.4343 5.34166 3.59444 3.7859 5.09301Z" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             <span>Избранное</span>
           </a>
+          <!-- Корзина -->
           <a href="cart.html" class="header__link-cart" data-col="0">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M15.2166 14.5653H7.29645C6.58044 14.5653 6 13.9732 6 13.2427C6 12.5122 6.58044 11.92 7.29645 11.92H14.8253C15.4568 11.92 15.9985 11.4607 16.1138 10.8273L16.9957 5.98438" stroke-linecap="round" stroke-linejoin="round"/>
@@ -98,8 +105,10 @@
           </a>
         </div>
       </div>
+      <!-- Нижнее меню -->
       <div class="header__wrapper-menu">
         <div class="header__container-menu container">
+          <!-- Меню -->
           <ul class="header__menu menu">
             <li class="menu__item menu__item--stock">
               <a href="#" class="menu__link menu__link--stock">
@@ -200,40 +209,47 @@
           </ul>
         </div>
       </div>
+      <!-- Главное меню -->
       <nav class="header__main-nav main-nav">
         <div class="main-nav__container container">
-          <ul class="main-nav__list">
-            <li class="main-nav__item1"><a href="#" class="main-nav__link">Каталог</a></li>
-            <li class="main-nav__item1"><a href="#" class="main-nav__link main-nav__link--search">Поиск</a></li>
-            <li class="main-nav__item1"><a href="#" class="main-nav__link main-nav__link--favorites">Избранное</a></li>
-            <li class="main-nav__item1"><a href="#" class="main-nav__link">Шоурум</a></li>
-            <li class="main-nav__item1"><a href="#" class="main-nav__link">Доставка</a></li>
-            <li class="main-nav__item1"><a href="#" class="main-nav__link">Оплата</a></li>
-            <li class="main-nav__item1"><a href="#" class="main-nav__link">Возврат</a></li>
-            <li class="main-nav__item1"><a href="#" class="main-nav__link">Бренды</a></li>
-            <li class="main-nav__item1 main-nav__item1--submenu">
-              <a href="#" class="main-nav__link">О компании</a>
-              <ul class="main-nav__submenu-list">
-                <li class="main-nav__item2"><a href="#" class="main-nav__link">О нас</a></li>
-                <li class="main-nav__item2"><a href="#" class="main-nav__link">Портфолио</a></li>
-                <li class="main-nav__item2"><a href="#" class="main-nav__link">Статьи и обзоры</a></li>
-                <li class="main-nav__item2"><a href="#" class="main-nav__link">Отзывы</a></li>
-                <li class="main-nav__item2"><a href="#" class="main-nav__link">Вакансии</a></li>
-                <li class="main-nav__item2"><a href="#" class="main-nav__link">Реквизиты</a></li>
-              </ul>
-            </li>
-            <li class="main-nav__item1"><a href="#" class="main-nav__link">Контакты</a></li>
-          </ul>
-          <ul class="main-nav__submenu-list2">
-            <li class="main-nav__item2"><a href="#" class="main-nav__link">О нас</a></li>
-            <li class="main-nav__item2"><a href="#" class="main-nav__link">Портфолио</a></li>
-            <li class="main-nav__item2"><a href="#" class="main-nav__link">Статьи и обзоры</a></li>
-            <li class="main-nav__item2"><a href="#" class="main-nav__link">Отзывы</a></li>
-            <li class="main-nav__item2"><a href="#" class="main-nav__link">Вакансии</a></li>
-            <li class="main-nav__item2"><a href="#" class="main-nav__link">Реквизиты</a></li>
-          </ul>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню/закрыть меню</span>
+          </button>
+          <div class="main-nav__wrapper-list">
+            <ul class="main-nav__list">
+              <li class="main-nav__item1"><a href="#" class="main-nav__link">Каталог</a></li>
+              <li class="main-nav__item1"><a href="#" class="main-nav__link main-nav__link--search">Поиск</a></li>
+              <li class="main-nav__item1"><a href="#" class="main-nav__link main-nav__link--favorites">Избранное</a></li>
+              <li class="main-nav__item1"><a href="#" class="main-nav__link">Шоурум</a></li>
+              <li class="main-nav__item1"><a href="#" class="main-nav__link">Доставка</a></li>
+              <li class="main-nav__item1"><a href="#" class="main-nav__link">Оплата</a></li>
+              <li class="main-nav__item1"><a href="#" class="main-nav__link">Возврат</a></li>
+              <li class="main-nav__item1"><a href="#" class="main-nav__link">Бренды</a></li>
+              <li class="main-nav__item1 main-nav__item1--submenu">
+                <a href="#" class="main-nav__link">О компании</a>
+                <ul class="main-nav__submenu-list">
+                  <li class="main-nav__item2"><a href="#" class="main-nav__link">О нас</a></li>
+                  <li class="main-nav__item2"><a href="#" class="main-nav__link">Портфолио</a></li>
+                  <li class="main-nav__item2"><a href="#" class="main-nav__link">Статьи и обзоры</a></li>
+                  <li class="main-nav__item2"><a href="#" class="main-nav__link">Отзывы</a></li>
+                  <li class="main-nav__item2"><a href="#" class="main-nav__link">Вакансии</a></li>
+                  <li class="main-nav__item2"><a href="#" class="main-nav__link">Реквизиты</a></li>
+                </ul>
+              </li>
+              <li class="main-nav__item1"><a href="#" class="main-nav__link">Контакты</a></li>
+            </ul>
+            <ul class="main-nav__submenu-list2">
+              <li class="main-nav__item2"><a href="#" class="main-nav__link">О нас</a></li>
+              <li class="main-nav__item2"><a href="#" class="main-nav__link">Портфолио</a></li>
+              <li class="main-nav__item2"><a href="#" class="main-nav__link">Статьи и обзоры</a></li>
+              <li class="main-nav__item2"><a href="#" class="main-nav__link">Отзывы</a></li>
+              <li class="main-nav__item2"><a href="#" class="main-nav__link">Вакансии</a></li>
+              <li class="main-nav__item2"><a href="#" class="main-nav__link">Реквизиты</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
+      <!-- Контакты -->
       <div class="header__contacts contacts">
         <div class="contacts__container container">
           <a href="tel:84951507761" class="contacts__tel">8 (495) 150-77-61</a>
@@ -283,6 +299,7 @@
         </div>
       </div>
     </header>
+    <!-- Header -->
 
     <script src="js/main.js"></script>
   </body>
